@@ -1,0 +1,611 @@
+/*
+Sorterat efter:
+- ID
+- CLASS
+- FONT + LINK
+- TABLE
+- RESPONSIVITET
+*/
+
+
+body
+{
+	background-image: url(lego.jpg);
+	margin: 0 0 0 0;
+}
+
+
+/*			ID			*/
+
+#BGD
+{
+	width: 100%;
+	height: 100%;
+}
+
+#container
+{
+	background-color: rgb(1, 131, 193); 
+	margin: 0 5vw 0 5vw;
+	height: 40vw;
+	width: 90vw;	
+}
+
+#containerLeft
+{
+	height: 40vw;
+	width: 20vw;
+	float: left;
+	position:relative;
+}
+
+#containerRight, #containerRightFront
+{
+	width: 70vw;
+	height: 40vw;
+	float: right;
+	background-color: #fff;
+	position: relative;
+}
+
+#containerRight {
+	overflow:auto;
+}
+
+#creator
+{
+	margin: 0%;
+	height: 4%;
+	color: white;
+	position: absolute;
+	text-align: left;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	top: 0%;
+}
+
+#footer {
+	width: 90vw;
+	height: 1vw;
+	margin: 0 5vw 0 5vw;
+	position: relative;
+}
+
+#fp 
+{
+	padding: 0;
+	margin:0;
+}
+
+#go
+{	
+		background-color: rgb(19,58,108); /*rgb(246,176,0)*/
+	/*opacity: 1;*/
+	width: 20vw;
+	height: 10vw;
+	/*border-radius: 10px;*/
+	text-align: center;
+	box-shadow: 2px 0px 10px 0px #007acc;
+}
+
+#help
+{
+	position: absolute;
+	margin-top: 1%; 
+	left: 2.5%;
+	bottom: 1%; 
+	border-radius: 30px;
+	height: 6%;
+	background-color: white;
+	color:  rgb(19,58,108);
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#help:hover {
+	text-decoration: underline;
+}
+
+#home
+{
+	width: 20vw;
+	height: 7vw;
+	color: blue;
+	float: left;
+}
+
+
+#logo
+{
+	width: 20vw;
+	height: 7vw;
+}
+
+#meny
+{
+	background-color:rgb(129,129,129);
+	margin: 0 5vw 0 5vw;
+	width: 90vw;
+	height: 7vw;
+}
+
+#menyinfo
+{
+	text-align: center;
+	font-family: myFirstFont;
+	font-size:50px;
+	color: white;
+	margin-top: -2%;
+}
+
+#postButton
+{
+	margin-top:17%;
+	width: 25%;
+	height: 20%;
+	border-radius: 10px;
+	font-family: myFirstFont;
+	font-size: 25px;
+	color: rgb(19,58,108); 
+	background-color: white;	
+}
+
+#txt
+{
+	height: 4%;
+	width: 18%;
+	font-size: 18px;
+	color: white;
+	position: absolute;
+	right: 0%;
+	text-align:  right;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+
+/*			CLASS			*/
+
+.catName
+{
+	margin: 0vw 3vw 0vw 2.5vw;
+	font-weight: bold;
+	margin-bottom: 0.5%;
+}
+
+.imagelink {
+	height: 100px;
+	width: 100px;
+	padding: 0 0 0 3%;
+}
+
+.numbItems
+{
+	position: absolute;
+	top: 9%;
+	right: 7%;
+    width: 30%;
+	text-align: right; 
+}
+
+.numberBox
+{	
+	margin: 0 4% 0 4%;
+	width:30%;
+}
+
+.search
+{
+	background-color: rgb(19,58,108); /*rgb(246,176,0)*/
+	width: 20vw;
+	height: 10vw;
+	box-shadow: 2px 0px 10px 0px #007acc;
+	text-align: center;
+}
+
+.searchBox
+{
+	margin: 0.4% 0 4%;
+	width: 70%;
+}
+
+.searchText
+{
+	margin: 0;
+	padding: 2% 0 5% 0;
+	font-size: 24px;
+	font-family: myFirstFont;
+	color: white;
+}
+
+.setName
+{
+	margin-bottom: 1%;
+	margin-left: 3.5%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+
+
+/*			FONT + LINK			*/
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(AgencyFBBoldWide2.ttf);
+}
+
+h6
+{
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 1%;
+}
+
+h3
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0 3.5% 0.5%;
+	padding-top: 0.5%;
+}
+
+a
+{
+	color: rgb(0, 70, 150);
+}
+
+p
+{
+	margin: 0%;
+	font-size: 16px;
+}
+
+
+
+/*			TABLE			*/
+
+table {
+	border-collapse: collapse;
+	border: 1px solid rgb(19,58,108);
+	width: 90%;
+	margin-left: 3%;
+	margin-bottom: 1%;
+}
+
+th, td {
+	text-align: left;
+	padding: 1%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.tableImage
+{
+	width: 12%;
+}
+
+.tableID
+{
+	width: 19%;
+}
+
+.tableName
+{
+	width: 72%;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+th {
+	background-color: rgb(19,58,108); 
+	color: white;
+}
+
+
+
+
+
+/*			RESPONSIVITET		*/
+
+@media screen and (max-width: 1400px) 
+{
+ 
+	 #menyinfo
+	{
+		font-size: 30px;
+	}
+
+	.searchText
+	{
+		padding: 2% 0 0;
+		font-size: 20px;
+	}
+
+	.numbItems
+	{
+		top: 7.5%;
+	}
+	
+	.numbItemsParts
+	{
+		top: 8.5%;
+	}
+
+	#postButton
+	{
+		font-size: 20px; 
+		width: 25%;
+		height: 20%;
+	}
+
+	#container
+	{
+		height: 58vw;
+	}
+	
+	#containerLeft
+	{
+		height: 58vw;
+		background-color: rgb(19,58,108); /*rgb(246,176,0)*/
+	}
+
+	#containerRight
+	{
+		height: 58vw;
+	}
+
+	.search
+	{
+		height: 10vw;
+	}
+	
+
+}
+
+
+@media screen and (max-width: 1080px)
+{
+	 
+	 #menyinfo
+	{
+		font-size: 30px;
+	}
+
+	.searchText
+	{
+		padding: 2% 0 0;
+		font-size: 20px;
+	}
+	
+	#postButton
+	{
+		font-size: 20px; 
+		width: 28%;
+		height: 23%;
+	}
+	
+	.numbItems
+	{
+		top: 5%;
+		width: 50%;
+	}
+	
+	.numbItemsParts
+	{
+		top: 7.5%;
+	}
+	
+	#container
+	{
+		height: 65vw;
+	}
+	
+	#containerLeft
+	{
+		height: 65vw;
+	}
+
+	#containerRight
+	{
+		height: 65vw;
+	}
+	
+
+
+}
+
+
+
+@media screen and (max-width: 940px) 
+	{
+	 
+	 #menyinfo
+	{
+		font-size: 25px;
+	}
+
+	.searchText
+	{
+		font-size: 15px;
+	}
+
+	#postButton
+	{
+		font-size: 20px; 
+		width: 28%;
+		height: 25%;
+	}
+
+
+	#container
+	{
+		height: 80vw;
+	}
+		
+	#containerLeft
+	{
+		height: 80vw;
+	}
+
+	#containerRight
+	{
+		height: 80vw;
+	}
+	
+	.numbItems
+	{
+		top: 4%;
+		width: 60%; 
+	}
+	
+	.numbItemsParts
+	{
+		top: 6%;
+		width: 55%;
+	}
+}
+
+
+
+@media screen and (max-width: 780px) 
+{
+ 
+	 #menyinfo
+	{
+		font-size: 15px;
+	}
+	
+	#postButton
+	{
+		font-size: 15px; 
+		width: 31%;
+		height: 30%;
+	}
+	
+	#container
+	{
+		height: 90vw;
+	}
+		
+	#containerLeft
+	{
+		height: 90vw;
+	}
+
+	#containerRight
+	{
+		height: 90vw;
+	}
+
+	.numbItems
+	{
+		width: 45%;
+	}
+	
+	.numbItemsParts
+	{
+		top: 6%;
+		width: 100%;
+	}
+	
+	h3
+	{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 480px) 
+{
+ 
+	#menyinfo
+	{
+		font-size: 9px;
+	}
+
+	#container
+	{
+		height: 110vw;
+	}
+		
+	#containerLeft
+	{
+		height: 110vw;
+	}
+
+	#containerRight
+	{
+		height: 110vw;
+	}
+
+	.numbItems
+	{
+		text-align: right; 
+	}
+	
+	.numbItemsParts
+	{
+		top: 8%;
+	}
+	
+	
+}
+
+@media screen and (min-height: 1000px)
+{
+	.numbItems
+	{
+		top: 7.2%;
+		width: 45%;	
+	}
+	
+	.numbItemsParts
+	{
+	top: 8.5%;
+	}
+	
+	#help
+	{
+		height: 6.5%;
+	}
+}
+
+	@media screen and (min-height: 1000px) and (max-width: 1080px)
+	{
+		.numbItems
+		{
+		top: 5.5%;
+		}
+		
+		table
+		{
+			width: 95%;
+		}
+	}
+
+	@media screen and (min-height: 1000px) and (max-width: 940px)
+	{
+		.numbItems
+		{
+			top: 4.5%;
+		}
+		
+		.numbItemsParts
+		{
+			top: 6%;
+		}
+	}
+	
+	@media screen and (min-height: 1000px) and (max-width: 780px)
+	{
+		.numbItemsParts
+		{
+			top: 7.5%;
+		}	
+		
+		h3
+		{
+			font-size: 20px;
+		}
+	}

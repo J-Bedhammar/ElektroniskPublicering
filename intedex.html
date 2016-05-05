@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link href="style.css" media="screen" rel="stylesheet" type="text/css"/>
+	<title>Databas för LEGO-satser</title>
+	<script src="java.js"></script>
+</head>
+
+<body  onload="clock()">
+	<div id="meny">
+			
+			<a href="intedex.html">
+				<span id="home">
+				<img id="logo" src="logo2.jpg" alt="logo">
+				</span>
+			</a>
+			
+		<div id="menyinfo">
+			<h1>DATABASE - SETS</h1> <!--Fonten kräver CAPS, litet t = gubbe-->
+		</div>
+	</div>
+	
+	<div id="container">
+	
+		<div id="containerLeft">
+			<form action="resultlist.php" method="GET">
+				<div class="search">
+					<p class="searchText">SEARCH SET</p>
+					<br>
+					<input class="searchBox" type="text" name="text" placeholder="e.g. A-Wing Fighter or 60050">
+					<br>
+				</div>
+				<div class="search">
+					<p class="searchText">YEAR</p>
+					<br>
+					<input class="numberBox" type="number" name="firstYear" min="1930" max="2016" step="1" value="2000">
+					<input class="numberBox" type="number" name="secondYear" min="1930" max="2016" step="1" value="2016">
+					<br>			
+				</div>
+				<div class="search">		<!-- kolla printScrn-bilden php/mysql loopa categorier-->
+					<p class="searchText">CATEGORIES</p>
+					<br>
+					<input class="searchBox" type="text" name="categories" placeholder="e.g. Ninjago"> <!-- type=" någon slags dropdown" -->
+					<br>
+				</div>
+				<div id="go">
+					<input id="postButton" type="submit" value="GO" >
+					
+				</div>
+			</form>
+			<button id="help" onclick="myFunction()">HELP</button>
+		</div>
+		
+		<div id="containerRightFront">
+				<img id="BGD" alt="FrontPage Background" src="FrontPage.png">
+		</div>
+		
+	</div>
+	
+	<div id="footer">
+		<div id="creator"><p>© Elon Olsson, Jennifer Bedhammar - March, 2016</p></div>
+		<div id="txt"></div>
+	</div>
+</body>
+</html>
